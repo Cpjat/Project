@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    }
+
+    .logo {
+        color:green;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .logo span {
+        color: #b6ffb0;
+    }
+
+    .navbar ul {
+        
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        color:green;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .header {
+        background-color: #007f00;
+        color: white;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .main {
+        display: flex;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 200px;
+        padding-right: 20px;
+    }
+
+    .sidebar h3 {
+        color: green;
+    }
+
+    .sidebar a {
+        display: block;
+        margin: 5px 0;
+        color: green;
+        text-decoration: none;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .content h3 {
+        color: green;
+    }
+
+    .grid-section {
+        background-color: #e6f2d9;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+    }
+
+    .grid-box {
+        width: 30%;
+        color: green;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+        color: gray;
+    }
+
+    footer a {
+        color: green;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Cool<span>logo</span></div>
+    <ul>
+        
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Help</a></li>
+    
+    </ul>
+  </nav>
+
+  <div class="header">Heading</div>
+
+  <div class="main">
+    <div class="sidebar">
+        <h3>Left heading</h3>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+
+    <div class="content">
+       <h3><button><b>View Template Source Code</b></button></h3>
+       <p>If the facts don't fit the theory, change the facts. The smaller your reality, the more convinced you are that you know everything...</p>
+       <p>The most important moment of your life is now. The most important person in your life is the one you are with now...</p>
+
+       <h3>Heading</h3>
+       <p>The most important moment of your life is now. The most important person in your life is the one you are with now...</p>
+       <p>You will not be punished for your anger, you will be punished by your anger...</p>
+    </div>
+  </div>
+
+  <div class="grid-section">
+    <div class="grid-box">
+        <h3>Heading</h3>
+        <p><span class="highlight">This, too, will pass.</span></p>
+        <h3>Heading</h3>
+        <p>The most important moment of your life is now. The most important person in your life is the one you are with now...</p>
+    </div>
+    <div class="grid-box">
+        <h3>Heading</h3>
+        <p><span class="highlight">You will not be punished for your anger,</span> you will be punished by your anger.</p>
+        <h3>Heading</h3>
+        <p>The most important moment of your life is now. The most important person in your life is the one you are with now...</p>
+    </div>
+    <div class="grid-box">
+        <h3>Heading</h3>
+        <p>You will not be punished for your anger, <span class="highlight">you will be punished by your anger.</span> The past has no power over the present moment.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; Copyright <a href="#">Your Site</a> |
+      <a href="#">Terms of Use</a> |
+      <a href="#">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
