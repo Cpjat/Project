@@ -1,0 +1,71 @@
+CSS PROPERTIES WITH EXPLANATION
+
+1. color: Sets the color of the text inside an element.
+Example: color: red; or color: #333;
+
+2. background-color: Sets the background color of an element.
+Example: background-color: lightblue;
+
+3. width: Sets the width of an element.
+Example: width: 400px; or width: 80%;
+
+4. height: Sets the height of an element.
+Example: height: 200px; or height: auto;
+
+5. border: Adds a border around an eleme
+Example: border: 2px solid black;
+
+6. border-radius: Rounds the corners of an element.
+Example: border-radius: 10px;
+
+7. padding: Sets the space between content and border.
+Example: padding: 20px; or padding: 10px 20px;
+
+8. margin: Sets space outside the border (between elements).
+Example: margin: 20px; or margin: 10px auto;
+
+9. background-image: Sets an image as the background.
+Example: background-image: url("image.jpg");
+
+10. background-size: Defines how the background image should be scaled.cover, contain, auto
+Example: background-size: cover;
+
+11. background-repeat: Specifies whether/how the background image repeats.Values: repeat, no-repeat, repeat-x, repeat-y
+Example: background-repeat: no-repeat;
+
+12. background-position: Sets the starting position of a background image.Values: center, top, left, right, bottom
+Example: background-position: center;
+
+13. background: A shorthand for all background properties in one line.
+Example: background: url("img.jpg") no-repeat center/cover;
+
+14. font-size: Sets the size of the text.
+Example: font-size: 16px; or font-size: 1.5em;
+
+15. font-weight: Sets the thickness of the text.
+Values: normal, bold, 100–900
+Example: font-weight: bold;
+
+16. text-align: Aligns the text horizontally inside its container.
+Values: left, right, center, justify
+Example: text-align: center;
+
+17. display: Specifies how the element should be displayed.
+Values: block, inline, inline-block, flex, none
+Example: display: flex;
+
+18. justify-content (used with flexbox): Aligns items horizontally in a flex container.
+Example: justify-content: center;
+
+19. align-items (used with flexbox): Aligns items vertically in a flex container.
+Example: align-items: center;
+
+
+22. line-height: Sets the height between lines of text.
+Example: line-height: 1.5;
+
+24. position: Specifies the positioning method. Values: static, relative, absolute, fixed, sticky
+Example: position: absolute;
+
+25. top, bottom, left, right: Used with positioned elements to define placement.
+Example: top: 10px;
