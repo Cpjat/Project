@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        .navbar1{
+            background-color:  black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2px ;
+            margin-top: 5px -8px;
+        }
+        .info{
+            color: white;
+            margin-left: 35px;
+        
+        }
+        .navbar1 ul{
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+            margin-right: 35px;
+        }
+        .navbar2{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+         
+        }
+        .logo a{
+            text-decoration: none;
+            color: green;
+            font-family: sans-serif;
+            font-size: xx-large;
+        }
+        .item{
+            display: flex;
+            list-style: none;
+            font-size: larger;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: black;
+            gap: 100px;
+            
+        }
+        .icon{
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            gap: 15px;
+        }
+        .navbar2 ul a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar3 {
+            position: relative;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text{
+            font-size: larger;
+            font-family: sans-serif;
+            position: absolute;
+            top: 25%;
+            margin-right: 500px ;
+            margin-bottom: 250px;
+            padding: 20px;
+        }
+        .navbar4{
+            
+        }
+        .category{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: xx-large;
+        }
+        .discription{
+            text-align: center;
+            font-size: x-large;
+        }
+        .navbar5{
+            display: flex;
+            gap: 200px;
+            margin-left: 150px;
+            margin-right: 150px;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .navbar5 ul{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            font-size: x-large;
+        }
+        .navbar5 ul a{
+            text-decoration: none;
+            color:white ;
+        }
+        .image{
+            border: 2px solid white ;
+            border-radius: 200px;
+        }
+        .btn{
+            background-color: green;
+            border: 2px ;
+            
+            border-radius: 5px;
+            padding: 15px ;
+            margin: 50px;
+
+        }
+        .navbar6{
+            background-color:#bebebd;
+
+        }
+        .featured{
+            text-align: center;
+            font-size: xx-large;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+        .discription2{
+            text-align: center;
+            font-size: x-large;
+        }
+        .navbar7{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+            
+        }
+        .navbar7 ul{
+            list-style: none;
+        }
+        .link{
+            text-align: center;
+            list-style: none;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .navbar6 ul a{
+             text-decoration:none ;
+             color: black;
+        }
+        .sw1{
+            background-color: white;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+            border-radius: 9px;
+            color: black;
+            margin-left: 200px;
+            font-size: larger;
+
+        }
+        .sw2{
+            background-color: white;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+            border-radius: 9px;
+            color: black;
+            font-size: larger;
+
+        }
+        .sw3{
+            background-color: white;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 9px;
+            color: black;
+            margin-right: 200px;
+            font-size: larger;
+
+        }
+        .footer{
+            background-color:#212121;
+            color: white;
+            text-decoration: none;
+        }
+        .footer ul a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 80px;
+            margin-right: 80px;
+            text-align: center;
+            padding: 30px;
+        
+            
+        }
+        .logo2{
+            color: green;
+            font-size: x-large;
+            font-family: sans-serif;
+        }
+        .Products{
+            font-size: x-large;
+            font-family: sans-serif;
+        }
+        .further{
+            font-size: x-large;
+            font-family: sans-serif;
+        }
+        .info2{
+            font-size: larger;
+            
+        }
+        .product2{
+            font-size: larger;
+        }
+        .furtherinfo{
+            font-size: larger;
+        }
+        .others{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logos ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .logos ul a{
+            list-style: none;
+            justify-content: space-between;
+        }
+        .form{
+            color: aliceblue;
+            text-align: center;
+        }
+        .subscribe{
+            color: aliceblue;
+            background-color: green;
+            padding: 9px;
+            border-radius: 3px;
+        }
+        .emails{
+            padding: 9px;
+        }
+        .footer2{
+            background-color: white;  
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="info"><b>✉️ cpjat141@gmail.com</b>&nbsp;📞1200-2121-8411</div>
+        <ul>
+            <li><a href="#">
+                <img src="https://toppng.com/uploads/preview/flat-facebook-logo-black-and-white-png-11536002415hysylp9yl6.png" alt="" width="20px">
+            </a></li>
+            <li><a href="#">
+                <img src="data:image/webp;base64,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" alt="" width="20px">
+            </a></li>
+            <li><a href="#">
+                <img src="data:image/webp;base64,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" alt="" width="20px">
+            </a></li>
+            <li><a href="#">
+                <img src="https://th.bing.com/th/id/OIP.ZhWkiqpP_ESuOPzNGD6HIQHaHa?w=175&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" width="20px">
+            </a></li>
+        </ul>
+    </nav>
+    <nav class="navbar2">
+        <div class="logo"><a href="#"><strong>Zay</strong></a></div>
+        <ul class="item">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+        </ul>
+        <ul class="icon">
+            <li><a href="#">🔎</a></li>
+            <li><a href="#">🛒</a></li>
+            <li><a href="#">💻</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar3">
+        <div class="product">
+            <img src="data:image/webp;base64,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" alt="product image" width="1890" height="900">
+        <div class="text">Experience the power of next-generation technology in your palm.<br>Stay connected and in control, wherever you go.<br> vibrant Ultra HD resolution and immersive Dolby Audio, every show, game, <br>and movie comes to life.</div>
+        </div>
+    </nav>
+    <nav class="navbar4">
+        <div class="category">Categories of the month</div>
+        <div class="discription">Discover our top-picked product categories specially curated for this month! Whether you're upgrading your tech,<br> refreshing your wardrobe, or finding the perfect gift,<br> these categories feature the most trending and best-selling items handpicked just for you.</div>
+    </nav>
+    <nav class="navbar5">
+        <div class="image1">
+            <ul>
+            <li class="image"><img src="https://th.bing.com/th/id/OIP.jNHx-XPIHq8BYdAE3PjC0AHaHa?w=199&h=198&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="watch"></li>
+            <li>Watches</li>
+            <li class="btn"><a href="#">Shop now</a></li>
+            </ul>
+        </div>
+        <div class="image2">
+            <ul>
+            <li class="image"><img src="https://th.bing.com/th/id/OIP.5zW-a02gQbt5izW3gXXQpAHaLe?w=127&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="watch"></li>
+            <li>Phones</li>
+            <li class="btn"><a href="#">Shop now</a></li>
+            </ul>
+        </div>
+        <div class="image3">
+            <ul>
+            <li class="image"><img src="https://th.bing.com/th/id/OIP.f0PGqPHFwhJiGbc8n9oapQHaE8?w=264&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="watch"></li>
+            <li>Other Accessories</li>
+            <li class="btn"><a href="#">Shop now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar6">
+        <div class="featured">Featured Product</div>
+        <div class="discription2">Stay connected and track your fitness with the sleek and powerful <strong>Smart Fit Watch</strong>.<br> 
+         heart-rate monitoring, and multi-day battery life, this stylish wearable is perfect for work, workouts.</div>
+         <nav class="navbar7">
+            <ul class="sw1">
+                <li><img src="https://th.bing.com/th/id/OIP.rf9OXw53T63_6fpHayVjhQHaHa?w=194&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="SW"></li>
+                <li>★★★☆☆&nbsp;&nbsp;&nbsp;450/-</li>
+                <li class="link"><a href="#">Smart Watches</a></li>
+                <li>Discover the perfect blend of style and <br>technology with <br>the Smart Fit Watch. <br>Whether you're tracking your fitness <br> goals or staying connected on the go.</li>
+            </ul>
+             <ul class="sw2">
+                <li><img src="https://th.bing.com/th/id/OIP.0T_eAVZxBUvWJssTMILxKgHaGm?w=212&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="PB"></li>
+                <li>★★★☆☆&nbsp;&nbsp;&nbsp;990/-</li>
+                <li class="link"><a href="#">Power Banks</a></li>
+                <li>Discover the perfect blend of style and <br>
+                    technology with <br>the Smart power banks. <br>Whether you're charging <br>phone and stay connected on the go.</li>
+            </ul>
+             <ul class="sw3">
+                <li><img src="https://th.bing.com/th/id/OIP.xQ3HJg7LmBkoG4ZjtPk_AQHaHJ?w=189&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HP"></li>
+                <li>★☆☆☆☆&nbsp;&nbsp;&nbsp;550/-</li>
+                <li class="link"><a href="#">Headphones</a></li>
+                <li>Discover the perfect blend of style and <br>technology with <br>the Headphones. <br> Whether you're listining music <br>  or watching movies.</li>
+            </ul>
+         </nav>
+    </nav>
+    <footer class="footer">
+        <div class="main">
+            <div class="info2">
+                <div class="logo2">ZayShop</div>
+                <ul>
+                    <li><a href="#">📍25 Malviya Nagar,Jaipur</a></li>
+                    <li><a href="#">✉️ cpjat141@gmail.com</a></li>
+                    <li><a href="#"></a>📞1200-2121-8411</li>
+                </ul>
+            </div>
+            <div class="product2">
+                <div class="Products">Products</div>
+                <ul>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Power Banks</a></li>
+                    <li><a href="#">Headphones</a></li>
+                </ul>
+            </div>
+            <div class="furtherinfo">
+                <div class="further">Further Info</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="others">
+            <div class="logos">
+                <ul>
+                    <li><a href="#">ƒ</a></li>
+                    <li><a href="#">📩</a></li>
+                    <li><a href="#">☎︎</a></li>
+                </ul>
+            </div>
+            <form action="" class="form">
+                
+                <input type="email" placeholder="enter your email" class="emails">
+                <label for="Subscribe" class="subscribe">Subscribe</label>
+            </form>
+
+        </div>
+        
+    </footer>
+    <footer class="footer2">
+        <p>@Copyright reserved by Cpjat|2021</p>
+    </footer>
+
+    
+</body>
+</html>
