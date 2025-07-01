@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        
+        *{
+            position: relative;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(43, 41, 41);
+        }
+        .main{
+            background-color: rgb(43, 41, 41);
+        }
+        .navbar1{
+            background-color: rgb(43, 41, 41);
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+        }
+        .logo{
+            margin-left: 40px;
+        }
+        
+        .search{
+            background-color: rgb(34, 34, 34);
+            color: white;
+            box-shadow: none;
+        }
+        .feature{
+            color: white;
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+            font-family: sans-serif;
+            font-size: larger;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .feature li{
+            margin: 0 15px;
+        }
+        .feature li a{
+            text-decoration: none;
+            color:rgba(83, 83, 83, 0.982);
+            padding: 10px 15px;
+            display: inline-block;
+            
+        }
+        .feature a:hover{
+            color: rgb(161, 16, 105);
+        }
+        .profile{
+            background-color: black;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .search{
+            width: 220px;              
+            height: 50px;               
+            background-color: #383737; 
+            color: white;     
+            padding: 10px 15px;   
+            border: none;                
+            border-radius: 20px;        
+            font-size: 16px;
+        }
+        .search::placeholder{
+            color: rgb(92, 90, 90);
+        }
+        .navbar2{
+            background-color: rgb(54, 53, 53);
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 30px;
+            margin: 0px auto;
+            width: fit-content;
+            border-radius: 50px;
+            font-family: sans-serif;
+        }
+        .image2{
+            
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            padding: 50px;
+            border-radius: 85px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: block;
+        }
+        .pink{
+            color: palevioletred;
+        }
+        .browse1{
+            background-color:palevioletred ;
+            color: wheat;
+            height:56px;left:90px;top:-350px;
+            width:150px;border-radius: 18px;border: none;
+            font-weight: bold;
+            font-size: 15px;
+            cursor:pointer;
+            transition: all 0.15s;
+        }
+        .browse1:hover{
+            color:palevioletred;
+            background-color: white;
+        }
+        .navbar3{
+            padding: 40px;
+        }
+        .highlight-light {
+            font-weight: bold;
+            text-decoration: underline;
+            color: white;
+        }
+        .highlight{
+            color: palevioletred;
+        }
+        .image3{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            left: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .game-card {
+            background-color: #504e4e;
+            border-radius: 16px;
+            padding: 16px;
+            color: white;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .tag {
+            color: #aaa;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #ffc107;
+        }
+        .navbar3{
+            background-color: rgb(54, 53, 53);
+            margin-top: -80px; 
+            padding: 90px;
+            margin: 0px;
+            margin-top: -240px;
+            left: 118px;
+            width: 1080px;
+            border-radius: 40px;
+            font-family: sans-serif;
+
+        }
+        .browse2{
+            background-color:palevioletred ;
+            color: wheat;
+            height:56px;left:420px;top:50px;
+            width:150px;border-radius: 18px;border: none;
+            font-weight: bold;
+            font-size: 15px;
+            cursor:pointer;
+            transition: all 0.15s;
+        }
+        .browse2:hover{
+            color:palevioletred;
+            background-color: white;
+        }
+        .navbar4{
+            background-color: rgb(54, 53, 53);
+            padding: 90px;
+            margin: 0px;
+            margin-top: -50px;
+            left: 118px;
+            width: 1080px;
+            border-radius: 40px;
+            font-family: sans-serif;
+
+        }
+        .image5{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            left: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .image5 img{
+            width: 60px;
+            border-radius: 15px;
+        }
+        .button3{
+            background-color:palevioletred ;
+            color: wheat;
+            height:56px;left:90px;top:-350px;
+            width:150px;border-radius: 18px;border: none;
+            font-weight: bold;
+            font-size: 15px;
+            cursor:pointer;
+            transition: all 0.15s;
+        }
+        .button3 a{
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+        }
+        .button3:hover{
+            color:palevioletred;
+            background-color: white;
+        }
+        .navbar5{
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <nav class="navbar1">
+            <div class="logo"><img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/logo.png" alt="" ></div>
+            <ul >
+                <form action="">
+                    <input type="search" name="" id="" placeholder="🔍  type something" class="search">
+                </form>        
+            </ul>
+            <ul class="feature">
+                <li class="home"><a href="http://127.0.0.1:3000/taskhome.html">Home</a></li>
+                 <li class="about"><a href="http://127.0.0.1:3000/taskbrowse.html">Browse</a></li>
+                  <li class="detail"><a href="http://127.0.0.1:3000/taskdetail.html">Detail</a></li>
+                   <li class="browse"><a href="http://127.0.0.1:3000/taskstream.html">Stream</a></li>
+                    <li class="profile"><a href="http://127.0.0.1:3000/taskprofile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar2">
+            <div class="image1">
+                <img src="banner-bg.jpg" alt="" class="image2" width="1500">
+                <p style="font-size: larger; color:white;left: 140px;top: -420px;">Welcome to Cyborg</p>
+                <p style="font-size: xx-large;left: 140px;top: -400px;color: white;"><span class="pink">BROWSE</span> Our Popular <br>Games Here</p>
+                <ul class="Button">
+                    <button class="browse1">Browse</button>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar3">
+            <h2 style="top: -50px;left: 5px;"><span class="highlight-light">Most Popular</span> <span class="highlight">Right Now</span></h2>
+            <div class="image3">
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-01.jpg" alt="Fortnite">
+                    <h4>Fortnite</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-03.jpg" alt="Fortnite">
+                    <h4>Dota</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-02.jpg" alt="Fortnite">
+                    <h4>Pubg</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-04.jpg" alt="Fortnite">
+                    <h4>FreeFire</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image3">
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-05.jpg" alt="Fortnite">
+                    <h4>GTA</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-06.jpg" alt="Fortnite">
+                    <h4>StandOff</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-07.jpg" alt="Fortnite">
+                    <h4>COD</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/popular-08.jpg" alt="Fortnite">
+                    <h4>CS-GO</h4>
+                    <p class="tag">Sandbox</p>
+                    <div class="info">
+                      <span>⭐ 4.8</span>
+                      <span>⬇️ 2.3M</span>
+                    </div>
+                </div>
+                <ul class="Button2">
+                    <button class="browse2">Discover Popular</button>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar4">
+            <h2 style="top: -0px;left: 5px;"><span class="highlight-light"><u>Your Gaming</u></span> <span class="highlight">Liberary</span></h2>
+            <div class="image5">
+                <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/game-01.jpg" alt="Fortnite">
+                <div class="game-card1">
+                    <h4>Fortnite</h4>
+                    <p class="tag">Sandbox</p>
+                </div>
+                <div><h4>Date Added</h4>
+                    <p class="tag">12-5-2025</p></div>
+                <div><h4>Hours Played</h4>
+                    <p class="tag">201hrs</p></div> 
+                <div><button style="left: 1000px;top: -55px;" class="button3"><a href="#">Download</a></button></div> 
+            </div>
+            <hr>  
+            <div class="image5">
+                <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/game-02.jpg" alt="Fortnite">
+                <div class="game-card1">
+                    <h4>Pubg</h4>
+                    <p class="tag">Epic Games</p>
+                </div>
+                <div><h4>Date Added</h4>
+                    <p class="tag">7-5-2025</p></div>
+                <div><h4>Hours Played</h4>
+                    <p class="tag">41hrs</p></div> 
+                <div><button style="left: 1000px;top: -55px;" class="button3"><a href="#">Download</a></button></div> 
+            </div>
+            <hr>
+            <div class="image5">
+                <img src="https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/game-03.jpg" alt="Fortnite">
+                <div class="game-card1">
+                    <h4>Dota</h4>
+                    <p class="tag">Stream</p>
+                </div>
+                <div><h4>Date Added</h4>
+                    <p class="tag">15-5-2025</p></div>
+                <div><h4>Hours Played</h4>
+                    <p class="tag">400hrs</p></div> 
+                <div><button style="left: 1000px;top: -55px;" class="button3"><a href="#">Download</a></button></div> 
+            </div>
+            <div>
+                <ul class="Button2">
+                    <button class="browse2">View Your Liberary</button>
+                </ul>
+            </div>
+            </nav> 
+        <nav class="navbar5">
+            <P>Copyright © 2036 Cyborg Gaming Company. All rights reserved.</P>
+        </nav>           
+    </nav>
+</body>
+</html>
