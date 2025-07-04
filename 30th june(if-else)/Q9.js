@@ -1,0 +1,9 @@
+//Input age and check if the person is eligible for voting (≥18).
+const prompt = require('prompt-sync')();
+
+let age = parseInt(prompt("Enter your age: "));
+if (age >= 18) {
+    console.log("Eligible to vote");
+} else {
+    console.log("Not eligible to vote");
+}
