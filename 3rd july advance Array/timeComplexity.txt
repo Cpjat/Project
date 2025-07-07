@@ -1,0 +1,3 @@
+The worst-case time complexity of Array.prototype.splice() is O(n)
+Where n is the number of elements after the splice index in the array.
+Why-It shifts elements after the start index when needed.The more element, more time to be taken.
