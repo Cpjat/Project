@@ -1,0 +1,26 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.task-form input {
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.task-form button {
+  padding: 8px 12px;
+  margin-right: 5px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #eee;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
